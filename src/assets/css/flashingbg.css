@@ -1,0 +1,18 @@
+.flashingbg{
+    width:100vw;
+    height:100vh;
+    background-color:red;
+    position: absolute;
+    box-sizing: border-box;
+    border: 2vw red solid;
+}
+
+.flashingbg::after{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: green; 
+}
