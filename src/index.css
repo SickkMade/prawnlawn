@@ -1,7 +1,7 @@
 body{
   margin:0;
   overflow:hidden;
-  cursor: url("prawnc.png"), auto;
+  cursor: url("/prawnc.png"), auto;
 }
 img{
   user-select: none;
