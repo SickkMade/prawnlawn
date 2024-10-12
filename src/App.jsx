@@ -7,6 +7,7 @@ function App() {
   const playAudio = () => {
     audioRef.current.play();
     setIsStart(true);
+    document.title = "hardcoreprawnlawn!!!"
   }
 
 

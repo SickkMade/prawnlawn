@@ -89,9 +89,11 @@ button:active{
 }
 
 .spin{
-  animation spin 1s forwards;
+  animation: spin 1s forwards;
 }
 
 @keyframes spin {
-  
+  to{
+    transform: rotate(360deg);
+  }
 }
