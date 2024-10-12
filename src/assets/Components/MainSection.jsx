@@ -5,7 +5,7 @@ function MainSection() {
   return (
     <section id="main">
         <FlashingBg flashSpeed={500} />
-        <FlyingPrawn prawnCount={5} />
+        <FlyingPrawn prawnCount={15} />
         <img className="prawn" src="prawn.gif" />
     </section>
   )
