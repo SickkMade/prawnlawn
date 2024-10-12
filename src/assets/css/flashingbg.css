@@ -1,10 +1,10 @@
 .flashingbg{
     width:100vw;
     height:100vh;
-    background-color:red;
+    background-color:var(--border-color);
     position: absolute;
     box-sizing: border-box;
-    border: 2vw red solid;
+    border: 2vw var(--border-color) solid;
 }
 
 .flashingbg::after{
@@ -14,5 +14,5 @@
     position:absolute;
     box-sizing: border-box;
     border-radius: 1rem;
-    background-color: green; 
+    background-color: var(--background-color); 
 }

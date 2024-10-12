@@ -9,4 +9,48 @@ body{
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+  filter: saturate(125%);
+}
+button{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding:20px;
+  border-radius: 1.25rem;
+  background-color:black;
+  color:white;
+  font-size:1.25rem;
+}
+button:hover{
+  cursor:pointer;
+  filter:brightness(105%);
+  scale:105%;
+}
+button:active{
+  filter:brightness(110%);
+  scale:110%;
+}
+
+#main{
+  width:100%;
+  height:100vh; 
+  /* AAAAAA WHY HACKY???? */
+  opacity:0;
+  position:relative;
+  animation: 2s forwards cue-in .5s;
+}
+
+@keyframes cue-in {
+    from{
+      transform: scale(0%);
+    }
+    to{
+      opacity:1;
+    }
+}
+
+.invisible{
+  visibility: hidden;
+  position: absolute;
 }
