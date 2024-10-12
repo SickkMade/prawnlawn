@@ -3,6 +3,11 @@ body{
   overflow:hidden;
   cursor: url("prawnc.png"), auto;
 }
+img{
+  user-select: none;
+  -moz-user-select: none;
+  filter: hue-rotate(-15deg);
+}
 .prawn{
   position: absolute;
   max-width:600px;
@@ -10,7 +15,6 @@ body{
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  filter: saturate(125%);
 }
 button{
   position:absolute;
@@ -60,11 +64,11 @@ button:active{
 }
 
 .flyby-right{
-  animation: flyby-right var(--speed) infinite linear;
+  animation: flyby-right var(--speed) var(--reset-time) infinite linear;
 }
 
 .flyby-left{
-  animation: flyby-left var(--speed) infinite linear;
+  animation: flyby-left var(--speed) var(--reset-time) infinite linear;
 }
 
 @keyframes flyby-left {
@@ -82,4 +86,12 @@ button:active{
   to{
     left:-25%;
   }
+}
+
+.spin{
+  animation spin 1s forwards;
+}
+
+@keyframes spin {
+  
 }
