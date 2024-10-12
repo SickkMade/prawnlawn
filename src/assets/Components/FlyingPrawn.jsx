@@ -21,7 +21,7 @@ function FlyingPrawn({ prawnCount }) {
   return (
     <>
     {prawns && prawns.map(obj => (
-        <img key={obj.id} className={`flying-prawn ${obj.direction > 0 ? "flyby-left" : 'flyby-right'}`} src="prawn.webp"
+        <img key={obj.id} className={`flying-prawn ${obj.direction > 0 ? "flyby-left" : 'flyby-right'}`} src="prawn.gif"
         style={{
             '--opacity': obj.opacity,
             '--speed': obj.speed,

@@ -5,6 +5,7 @@ body{
 }
 img{
   user-select: none;
+  pointer-events: none;
   -moz-user-select: none;
   filter: hue-rotate(-15deg);
 }
@@ -50,7 +51,7 @@ button:active{
 
 @keyframes cue-in {
     from{
-      transform: scale(0%);
+      scale:.1;
     }
     to{
       opacity:1;
@@ -86,15 +87,5 @@ button:active{
   }
   to{
     left:-25%;
-  }
-}
-
-.spin{
-  animation: spin 1s forwards;
-}
-
-@keyframes spin {
-  to{
-    transform: rotate(360deg);
   }
 }
