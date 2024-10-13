@@ -14,7 +14,11 @@ function FlashingBg({ flashSpeed }) {
         }, flashSpeed)
     }, [])
   return (
-    <section className="flashingbg" style={{'--background-color': backgroundColor, '--border-color': borderColor}}></section>
+    <section className="flashingbg" style={{'--background-color': backgroundColor, '--border-color': borderColor}}>
+        <a target="_blank" href="https://sickkmade.github.io" className="flashingbg--text">
+            <img width="50px"  src="/duckfound!.png"></img>
+        </a>
+    </section>
   )
 }
 
