@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     {!isStart && <button onClick={playAudio}>Do You Trust Me?</button>}
-    <audio autoPlay loop ref={audioRef}>
+    <audio loop ref={audioRef}>
         <source src="konga.mp3" type="audio/mp3"></source>
     </audio>
     {isStart && <MainSection />}
